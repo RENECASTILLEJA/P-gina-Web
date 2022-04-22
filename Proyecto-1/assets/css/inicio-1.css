@@ -1,0 +1,918 @@
+:root{
+    --color-1: #fff;
+}
+body{
+	background-color: #fff;
+	font-family: 'Montserrat', sans-serif!important;
+}
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.align-items-center{
+	align-items: center;
+}
+.justify-content-between{
+	justify-content: space-between;
+}
+/*header*/
+.header{
+	background-color: var(--color-1);
+	padding: 12px 0;
+	line-height: 1.5;
+}
+
+.header .logo,
+.header .nav{
+	padding:0 15px;
+}
+.header .logo a{
+	font-size: 18px;
+	color: black;
+	text-transform: capitalize;
+}
+.header .nav ul li{
+	display: inline-block;
+	margin-left: 40px;
+}
+.header .nav ul li a{
+	display: block;
+	font-size: 17px;
+	text-transform: capitalize;
+	color: black;
+	padding: 10px 0;
+	transition: all 0.5s ease;
+}
+
+.header .nav .color:hover{
+	border-radius: 10px;
+	text-decoration: overline;
+	color: #dc2430;
+}
+.nav-toggler{
+	height: 34px;
+	width: 44px;
+	background-color: grey;
+	border-radius: 4px;
+	cursor: pointer;
+	border:none;
+	display: none;
+	margin-right: 15px;
+}
+.nav-toggler:focus{
+	outline: none;
+	box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+.nav-toggler span{
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    display: block;
+    margin:auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.nav-toggler.active span{
+	background-color: transparent;
+}
+.nav-toggler span::before,
+.nav-toggler span::after{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-1);
+	transition: all 0.3s ease;
+}
+.nav-toggler span::before{
+	transform: translateY(-6px);
+}
+.nav-toggler.active span::before{
+	transform: rotate(45deg);
+}
+.nav-toggler span::after{
+	transform: translateY(6px);
+}
+.nav-toggler.active span::after{
+	transform: rotate(135deg);
+}
+@media(max-width:991px){
+   .nav-toggler{
+   	display: block;
+   }
+   .header .nav{
+   	width: 100%;
+   	padding:0;
+   	max-height: 0px;
+   	overflow: hidden;
+   	visibility: hidden;
+   	transition: all 0.5s ease;
+   }
+   .header .nav.open{
+   	visibility: visible;
+   }
+   .header .nav ul{
+   	padding:12px 15px 0;
+   	margin-top: 12px;
+   	border-top:1px solid rgba(255,255,255,0.2);
+   }
+   .header .nav ul li{
+   	display: block;
+   	margin:0;
+   }
+}
+
+
+/*slide*/
+#container-slider
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+#slider {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+}
+#slider li {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    height: 100%;
+    display: block;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    z-index: -1;
+    opacity: 0;
+}
+#container-slider .arrowPrev, #container-slider .arrowNext{
+    font-size: 30pt;
+    color: rgba(204, 204, 204, 0.65);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    z-index: 2; 
+}
+#container-slider .arrowNext {
+    left: initial;
+    right: 50px !important;
+}
+.content_slider{
+    padding: 15px 30px;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+}
+.content_slider div{
+    text-align: center;
+}
+.content_slider h2{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+	color:white;
+}
+.content_slider p {
+    font-size: 15pt;
+    font-family: 'arial';
+    color: #FFF;
+    margin-bottom: 20px;
+}
+#slider li .content_slider{
+    background: rgba(0, 0, 0, 0.50);
+    padding: 10px 125px;
+}
+.content_slider{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnSlider{
+    color: #FFF;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 10px 50px;
+    border: 1px solid #CCC;
+    background: rgba(13, 13, 13, 0.55);
+    border-radius: 31px;
+    text-decoration: none;
+    transition: .5s all;
+}
+.btnSlider:hover{
+    background: #111;
+    border: 1px solid #111;
+}
+.listslider {
+    position: absolute;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    bottom: 5%;
+    list-style: none;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+.listslider li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.listslider li a {
+    background: #CCC;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.item-select-slid {
+    background: #FFF  !important;
+}
+
+@media screen and (max-width: 460px){
+	.content_slider h2 {
+	    font-size: 15pt !important;
+	}
+	.content_slider p {
+	    font-size: 12pt !important;
+	}
+	#container-slider .arrowPrev, #container-slider .arrowNext{
+		font-size: 20pt;
+	}
+	#container-slider .arrowPrev{
+		left: 15px;
+	}
+	#container-slider .arrowNext{
+		right: 15px !important;
+	}
+	#slider{
+		height: 400px;
+		min-height: 400px;
+	}
+	#slider li .content_slider{
+		padding: 10px 35px;
+	}
+	.btnSlider{
+		padding: 10px 30px;
+    	font-size: 10pt;
+	}
+
+}
+  
+.Informacion-cards p{
+	padding: 8px;
+	color: black;
+	font-size: 15px;
+	color: #D9B060;
+		/*font-family: "Montserrat", Sans-serif;*/
+
+
+}
+.Informacion-cards h6{
+	color: black;
+	font-size: 17px;
+	text-align: center;
+	/*font-family: "Montserrat", Sans-serif;*/
+
+
+}
+.Informacion-cards{
+	display: grid;
+	grid-template-columns: repeat(4,4fr);
+	padding: 20px;
+
+}
+
+.text{
+	background-color: chocolate;
+	text-align: center;
+	font-size: 25px;
+	padding: 15px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	
+	
+}
+/*footer*/
+.info{
+    background-color: #363333;
+    padding: 15px 15px;
+	grid-template-columns: repeat(4,4fr);
+	display: grid;
+	
+}
+.info h1{
+	padding: 8px;
+	font-size: 20px;
+	color: rgb(255, 249, 249);
+	display: flex;
+	justify-content: center;
+}
+.info a{
+	padding: 10px;
+	color: rgb(255, 255, 255);
+	padding: 8px;
+	font-size: 15px;
+
+}
+.info p{
+	padding: 10px;
+	color: rgb(255, 255, 255);
+	padding: 8px;
+	font-size: 15px;
+	text-align: center;
+
+}
+iframe{
+	padding:10px;
+	border-radius: 20px;
+}
+
+.info img{
+	height: 30px;
+	padding-left: 10px;
+
+}
+@media (max-width:480px){
+    .info{
+        grid-template-columns: 100%!important;
+    }
+}
+/*fin footer*/
+
+
+.Container-1-1-3{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: auto;
+	padding: 40px;
+	gap: 0px;
+	align-items: center;
+	background-attachment: fixed;
+	background-image: url(../Imagenes-Contabilidad/desktop_818568c2-25ba-4544-8858-94096a7d28da.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.informacion-1 {
+	align-items: center;
+}
+.informacion-1 h2{
+	color: #D9B060;
+	font-size: 30px;
+	/*font-family: "Montserrat", Sans-serif;*/
+
+}
+.informacion-1 p{
+	color: rgb(70, 14, 4);
+	font-size: 15px;
+	/*font-family: "Montserrat", Sans-serif;*/
+
+}
+.informacion-1 img{
+	max-width: 90%;
+	border-radius: 20px;
+	height: 290px;
+}
+
+@media  (max-width:600px){
+	.Container-1-6{
+		grid-template-columns: 100%!important;
+	}
+	.Container-1-1-3{
+		grid-template-columns: 100%!important;
+		
+	}
+	.Informacion-cards{
+		grid-template-columns: 100%!important;
+
+	}
+}
+.informacion-0{
+	color:white;
+	font-size: 30px;
+}
+.informacion-1-3 p{
+	color: white;
+	font-size: 17px;
+	/*font-family: "Montserrat", Sans-serif;*/
+
+}
+
+
+
+
+.whatsapp {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:30px;
+	z-index:100;
+  }
+  
+  .whatsapp-icon {
+	margin-top:13px;
+  }
+
+
+
+
+.Servicios-Contables{
+	background-color: #2c333c;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(3,3fr);
+	grid-template-rows: auto;
+}
+
+.Servicios-Contables-1-2 img{
+	height: 50px;
+	display: grid;
+	align-content: center;
+}
+
+.Servicios-Contables-1-2 h1{
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	padding: 15px;
+	/*font-family: "Montserrat", Sans-serif;*/
+}
+.Servicios-Contables-1-2 p{
+	color: white;
+	font-size: 17px;
+	padding-left: 10px;
+	gap: 20px;
+	/*font-family: "Montserrat", Sans-serif;*/
+}
+
+@media (max-width: 500px){
+	.Servicios-Contables{
+		grid-template-columns: 100%!important;
+	}
+	.Servicios-Nominas{
+		grid-template-columns: 100%!important;
+
+	
+}
+
+
+
+.Servicios-Nominas{
+	display: grid;
+	grid-template-columns: repeat(2,2fr);
+	grid-template-rows: auto;
+	background-color: #2d3f66;
+	
+}
+.Servicios-Nominas-1 {
+	background-image: url(../../assets/Imagenes-Contabilidad/Contabilidad-electronica-Colegio-Fiscal-de-Mexico-scaled.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.8;
+	text-align: center;
+	padding-block: 130px;
+
+}
+
+.Servicios-Nominas-1 h1{
+	color: white;
+	padding: 10px;
+	font-size: 30px;
+	/*font-family: "Montserrat", Sans-serif;*/
+}
+.Servicios-Nominas-1-1 p{
+	color: white;
+	padding: 25px;
+	font-size:17px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	vertical-align: baseline;
+}
+
+
+
+.Servicios-Nominas-1-1 h1{
+	color: white;
+	font-size: 30px;
+	padding-left: 35px;
+	/*font-family: "Montserrat", Sans-serif;*/
+}
+
+@media(max-width:450px){
+	.servicios-contables{
+		grid-template-columns: 100%!important;
+	}
+}
+
+
+
+.como-hacemos{
+	grid-template-columns: repeat(2,2fr);
+	display: grid;
+	grid-template-rows: auto;
+	padding: 20px;
+}
+.como-hacemos-1 img{
+	height: 400px;
+	opacity: 0.8;
+	border-radius: 10px;
+}
+.como-hacemos-1 h1{
+	padding-left: 30px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	color: #304269;
+	font-size: 35px;
+
+}
+
+.como-hacemos-1 p{
+	text-align: left;
+	padding-left: 20px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	color: #304269;
+	font-size: 17px;
+
+}
+
+@media (max-width:480px){
+	.como-hacemos{
+			grid-template-columns: 100%!important;
+	}
+	.como-hacemos img{
+		padding: 10px;
+		border-radius: 10px;
+		height: 217px;
+	
+	}
+}
+.color-azul{
+	background-color: #2d3f66;
+	padding: 60px;
+	
+}
+
+.color-azul h1{
+	color: #fff;
+	font-size: 30px;
+	/*font-family: "Montserrat", Sans-serif;*/
+
+}
+
+.mapa-1{
+	grid-template-columns: repeat(1,1fr);
+
+}
+
+.ubicacion iframe{
+	height: 500px;
+	width: 1348px;
+	border-radius: 10px;
+}
+
+@media (max-width:470px){
+	.mapa-1{
+		grid-template-columns: 100%!important;
+	}
+	.ubicacion iframe{
+		height: 300px!important;
+		width: 340px !important;
+		background-color: gray ;
+
+		}
+	}
+}
+
+.Empresa{
+	grid-template-columns: repeat(2,2fr);
+	display: grid;
+	padding-left: 80px;
+	padding: 50px;
+}
+.Empresa-1 img{
+	height: 400px;
+
+}
+
+.Empresa-1 h1{
+	font-size: 30px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	color: #304269;
+	padding-left: 20px;
+}
+.Empresa-1 p{
+	font-size: 20px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	color: #111;
+	padding-left: 40px;
+	padding: 30px;
+}
+
+.Empresa-1 a{
+	background-color: rgba(0, 0, 255, 0.527);
+
+	font-size: 20px;
+	padding: 10px;
+	color: #fff;
+}
+
+.Empresa-1 a:hover{
+	background-color: #304269;
+	font-size: 20px;
+	padding: 10px;
+	color: #fff;
+}
+
+.Empresa-2{
+	background-color: #233c52;
+	padding:140px;
+	justify-content: center;
+	display: flex;
+	
+}
+.Empresa-3 h2{
+	color: #fff;
+	font-size: 50px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	padding: 10px;
+}
+.Empresa-3 h2 span{
+	color: rgb(158, 42, 42);
+	font-size: 50px;
+	/*font-family: "Montserrat", Sans-serif;*/
+}
+
+.Empresa-3 p{
+	color: white;
+	font-size: 16px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	text-align: center;
+}
+.Empresa-3 a{
+	background-color: rgba(0, 153, 255, 0.493);
+	font-size: 20px;
+	padding: 15px;
+	color: #fff;
+}
+
+.Empresa-3 a:hover{
+	background-color: rgba(0, 0, 255, 0.527);
+	font-size: 20px;
+	padding: 10px;
+	color: #fff;
+}
+.Bienvenidos{
+	display:flex;
+	justify-content: center;
+	padding: 80px;
+}
+.Bienvenidos-1 h1{
+	color: #304269;
+	text-align: center;
+	font-family: inherit;
+	font-size: 26px;
+
+}
+.Bienvenidos-1 h2{
+	color: #304269;
+	text-align: center;
+	font-family: inherit;
+	font-size: 20px;
+
+}
+.Bienvenidos-1 p{
+	color: black;
+	text-align: center;
+	font-family: inherit;
+	font-size: 20px;
+}
+.parrafo-1-1{
+	display: flex;
+	justify-content: center;
+	padding:20px
+}
+.parrafo-1-2 h1{
+	color: #304269;
+	font-family: inherit;
+	text-align: center;
+	padding: 20px;
+
+}
+
+.parrafo-1-2 p{
+	color: #2d3f66;
+	text-align: center;
+	font-family: inherit;
+	font-size: 20px;
+}
+
+.Parrafos3-1{
+	display: grid;
+	grid-template-columns: repeat(4,4fr);
+}
+.Parrafos3-2 img{
+   height: 90px;
+   padding: 10px;
+
+}
+
+.Parrafos3-2 h1{
+	font-size: 18px;
+	color: #304269;
+	padding-left: 20px;
+	padding: 10px;
+	text-align: center;
+}
+.Parrafos3-2 p{
+	font-size: 17px;
+	color: #111;
+	padding-left: 20px;
+	text-align: left;
+}
+
+@media (max-width: 490px){
+	.Empresa{
+		grid-template-columns: 100%!important;
+	}
+	.Parrafos3-1{
+		grid-template-columns: 100%!important;
+	}
+	.Empresa-1 img{
+		height: 200px;
+	}
+	.Empresa-3 h2{
+		font-size: 30px;
+	}
+	.Empresa-3 h2 span{
+		font-size: 30px;
+	}
+	.Parrafos3-2 p{
+		font-size: 16px !important;
+		}
+		.parrafo-1-2 h1{
+			font-size: 20px!important;
+		}
+		.parrafo-1-2 p{
+			font-size: 18px!important;
+
+		}
+		.whatsapp-1 img{
+			height: 50px!important;
+		}
+		.whatsapp-1 h1{
+			font-size: 25px!important;
+
+		}
+		.whatsapp-1 h1  span{
+			font-size: 25px!important;
+
+		}
+}
+
+.whatsapp-0{
+	background-color: #25d365e5;
+	padding: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-content: space-evenly;
+}
+
+.whatsapp-1 img{
+		height: 70px;
+		padding-left: 30px;
+
+}
+.whatsapp-1 h1{
+	color: white;
+	font-size: 35px;
+	padding-left: 100px;
+	/*font-family: "Montserrat", Sans-serif;*/
+
+}
+
+.whatsapp-1 h1  span{
+	color: rgb(158, 42, 42);
+	font-size: 35px;
+	/*font-family: "Montserrat", Sans-serif;*/
+}
+
+
+
+
+.Conocenos{
+	display: flex;
+	justify-content: center;
+	background:rgba(31, 17, 80, 0.308) url(../Imagenes-Contabilidad/innovacion-tecnologica.jpg);
+	background-blend-mode: darken;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 400px;
+	background-attachment: fixed;
+	padding: 80px;
+}
+
+.Conocenos-1 h1{
+	color: white;
+	font-size: 59px;
+	text-align: center;
+		/*font-family: "Montserrat", Sans-serif;*/
+
+}
+
+.Conocenos-1 p{
+	color: white;
+	font-size: 49px;
+	text-align: center;
+		/*font-family: "Montserrat", Sans-serif;*/
+
+}
+
+.Conocenos-1 a{
+	background-color: rgba(0, 153, 255, 0.493);
+	font-size: 20px;
+	padding: 15px;
+		/*font-family: "Montserrat", Sans-serif;*/
+
+	color: #fff;
+
+}
+.Conocenos-1 a:hover{
+	background-color: rgba(12, 114, 182, 0.493);
+	font-size: 20px;
+	padding: 15px;
+	color: #fff;
+
+	
+}
+@media (max-width: 490px){
+	.Conocenos-1 h1{
+		font-size: 36px;
+	}
+	.Conocenos-1 p{
+		font-size: 19px;
+	}
+	.Conocenos-1 a{
+
+		background-color: rgba(0, 153, 255, 0.493);
+		font-size: 15px;
+		padding: 15px;
+		color: #fff;
+	
+	}
+	.Empresa-3 a{
+	background-color: rgba(0, 153, 255, 0.493);
+	font-size: 15px;
+	padding: 15px;
+	color: #fff;
+	}
+}
+

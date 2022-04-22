@@ -1,0 +1,624 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/Servicios-contables.css">
+  <link rel="shortcut icon" href="img/1.jpg">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<!--menu-->
+<body>
+
+ <header class="header">
+        <div class="language">
+            <div class="language-selected">
+                </div>         
+            </div>
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="logo">
+               <a href="#"><img src="img/1.jpg" alt="" height="120px" width="140px"></a>
+            </div>
+            <button type="button" class="nav-toggler">
+               <span></span>
+            </button>
+            <nav class="nav">
+               <ul>
+                   <!--<li><a href="#" class="en"><img src="https://media.flaticon.com/dist/min/img/flags/en.svg" alt="" height="16px"></a></li>
+                  <li><a class="es"href="#">TRADUCIR-ESPAÑOL</a></li>
+                  <li><a class="es"href=""><img src="https://media.flaticon.com/dist/min/img/flags/es.svg"alt="" height="15px"></a>-->
+                  <li class="container">
+                    <a class= "color" href="inicio.html">Inicio</a>
+                  </li>
+                  <li class="container">
+                    <a class= " color"href="#">Servicios</a>
+                  </li>
+                  <li class="container">
+                    <a class= "color"href="#">Sobre Nosotros</a>
+                  </li>
+                  <li class="container">
+                    <a  class= "color"href="contacto.html">Contacto</a>
+                  </li>
+                  <li><a href="#" class="en"><img src="https://media.flaticon.com/dist/min/img/flags/en.svg" alt="" height="20px"></a></li>
+                  <!--<li><a class="es"href="#">TRADUCIR-ESPAÑOL</a></li>-->
+                  <li><a class="es"href="#"><img src="https://media.flaticon.com/dist/min/img/flags/es.svg"alt="" height="20px"></a>
+               </ul>
+               
+            </nav>
+        </div>
+    </div>
+ </header>
+  <!--Slide-->
+ <div class= "slides">
+  <div class="slide">
+    <img src="img/SERVICIOS-CONTABLES.png" height="370px" alt="">
+  </div>
+  <div class="slide">
+    <img src="img/1464809441.jpg" height="370px" alt="">
+  </div>
+  <div class="slide">
+    <img src="img/cfdi_nomina_2020_subsidio_al_empleo_blog_mysuite.jpg" height="370px" alt="">
+  </div>
+  <div class="slide">
+    <img src="img/images.jpg"height="370px" alt="">
+  </div>
+  <div class="slide">
+    <img src="img/Ejemplo-de-recibo-de-nomina-OCCMundial.jpg"height="370px" alt="">
+  </div>
+  <div class="navigation">
+    <a class = "prev" onclick = "plusSlides(-1)">&#10094;</a>
+    <a class = "next" onclick = "plusSlides(-1)">&#10095;</a>
+  </div>
+</div>
+ <!--Servicios-titulo-->
+<div class="Servicios-Titulo">
+  <div class="Servicios-Titulo-color">
+    <h2 class="Nuestros-Servicios">Nuestros Servicios</h2>
+  </div>
+</div>
+<br>
+ <!--Servicios
+<section class="Container-1">
+  <main class="Servicios-1">
+    <div class="Servicios-1-1">
+      <div class="servicios-img">
+        <h2></h2>
+      </div>
+      <img src="img/images.jpg" alt="">
+      <small>
+        <h2 class="informacionn">Lorem ipsum dolor sit amet.</h2>
+        <p class="informacion-1">Lorem ipsum dolor sit amet.</p>
+        <p class="informacion-1-1">Lorem, ipsum dolor sit amet consectetur adipisicing.</p> 
+        </small>
+    </div>
+  </main>
+  <main class="Servicios-1">
+    <div class="Servicios-1-1">
+      <div class="servicios-img">
+        <h2></h2>
+      </div>
+      <img src="img/images.jpg" alt="">
+      <small>
+        <h2 class="Servicios">Lorem ipsum dolor sit amet.</h2>
+        <p class="Servicios-contables">Lorem ipsum dolor sit amet.</p>
+        <p class="Servicios-contables-1">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+      </small>
+    </div>
+  </main>
+  <main class="Servicios-1">
+    <div class="Servicios-1-1">
+      <div class="servicios-img">
+        <h2></h2>
+      </div>
+      <img src="img/images.jpg" alt="">
+      <small>
+        <h2 class="Calulo-nomimas">Lorem ipsum dolor sit amet.</h2>
+        <p class="Calulo-nomimas-1">Lorem ipsum dolor sit amet.</p>
+        <p class="Calulo-nomimas-2">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+      </small>
+    </div>
+  </main>
+ 
+  
+</section>
+-->
+<!--Servicios-->
+<section class="Container-1-5">
+  <main class="Container-1-1-2">
+    <div class="informacion-1">
+      <div class="informacion-0">
+        <h2>Informacion</h2>
+      </div>
+      <br><br>
+      <small>
+        <img src="img/vision.jpg"height="200px" alt="">
+      </small>
+      <br><br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi obcaecati maiores placeat atque eaque sed consequuntur non similique dolorem a?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi obcaecati maiores placeat atque eaque sed consequuntur non similique dolorem a?</p>
+    </div>
+    <div class="informacion-1">
+      <div class="informacion-0">
+        <h2>Informacion</h2>
+      </div>
+      <br><br>
+      <small>
+        <img src="img/vision.jpg"height="200px" alt="">
+      </small>
+      <br><br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi obcaecati maiores placeat atque eaque sed consequuntur non similique dolorem a?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi obcaecati maiores placeat atque eaque sed consequuntur non similique dolorem a?</p>
+    </div>
+  </main>
+</section>
+<section class="Container-1-6">
+  <main class="Container-1-1-3">
+    <div class="informacion-1">
+      <div class="informacion-0">
+        <h2>Informacion</h2>
+      </div>
+      <small>
+        <br><br>
+        <img src="img/vision.jpg" height="200px" alt="">
+      </small>
+      <br><br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi obcaecati maiores placeat atque eaque sed consequuntur non similique dolorem a?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi obcaecati maiores placeat atque eaque sed consequuntur non similique dolorem a?</p>
+    </div>
+    <div class="informacion-1">
+      <div class="informacion-0">
+        <h2>Informacion</h2>
+      </div>
+      <br><br>
+      <small>
+        <img src="img/vision.jpg"height="200px" alt="">
+      </small>
+      <br><br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi obcaecati maiores placeat atque eaque sed consequuntur non similique dolorem a?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi obcaecati maiores placeat atque eaque sed consequuntur non similique dolorem a?</p>
+    </div>
+  </main>
+</section>
+<br>
+<!--Footer-->
+<footer class="info">
+    <section>
+      <h1 class="Ubicacion">Ubicacion</h1>
+      <br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.0673050931046!2d-100.45867278550593!3d25.669063518694617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629809611c41c5%3A0x3b1e0b77ece10207!2sSierra%20de%20La%20Gavia%20163%2C%20Virginia%20Tafich%2C%2066374%20Santa%20Catarina%2C%20N.L.!5e0!3m2!1ses!2smx!4v1642809978028!5m2!1ses!2smx" width="300px" height="250px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <br>
+    <section>
+      <h1 class="Sobre" >Sobre Nosotros</h1>
+      <br>
+      <a class=""  href="">Iphone: 818181818181</a>
+      <a class=""  href="">Email: Patti-Asesores@gmail.com</a>
+      <br>
+    </section>
+    <section>
+      <h1 class="Contacto">Contacto información</h1>
+      <br>
+      <a class=""  href="">Telefono: 818181818181</a>
+      <a class=""  href="">Email: Patti-Asesores@gmail.com</a>
+    </section>
+  </footer>
+  <!--Servicios-fin-->
+
+
+
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <!--menu-->   
+ <script src="js/app.js"></script>
+    <!--traductor-->
+    <script src="js/Servicios-contables.js"></script>
+    <!--Slide de imagenes-->
+    <script src="js/slide.js"></script>
+      <!--Slide de menu-->
+      <script src="js/script.js"></script>
+</body>
+</html>
+
+:root{
+    --color-1: #fff;
+}
+body{
+	color:#797979;
+	background-color: #fff;
+}
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.align-items-center{
+	align-items: center;
+}
+.justify-content-between{
+	justify-content: space-between;
+}
+/*header*/
+.header{
+	background-color: var(--color-1);
+	padding: 12px 0;
+	line-height: 1.5;
+}
+
+.header .logo,
+.header .nav{
+	padding:0 15px;
+}
+.header .logo a{
+	font-size: 15px;
+	color: black;
+	text-transform: capitalize;
+}
+.header .nav ul li{
+	display: inline-block;
+	margin-left: 40px;
+}
+.header .nav ul li a{
+	display: block;
+	font-size: 17px;
+	text-transform: capitalize;
+	color: black;
+	padding: 10px 0;
+	transition: all 0.5s ease;
+}
+
+.header .nav .color:hover{
+	background-color: rgba(226, 45, 13, 0.747);
+	border-radius: 10px;
+}
+.nav-toggler{
+	height: 34px;
+	width: 44px;
+	background-color: grey;
+	border-radius: 4px;
+	cursor: pointer;
+	border:none;
+	display: none;
+	margin-right: 15px;
+}
+.nav-toggler:focus{
+	outline: none;
+	box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+.nav-toggler span{
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    display: block;
+    margin:auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.nav-toggler.active span{
+	background-color: transparent;
+}
+.nav-toggler span::before,
+.nav-toggler span::after{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-1);
+	transition: all 0.3s ease;
+}
+.nav-toggler span::before{
+	transform: translateY(-6px);
+}
+.nav-toggler.active span::before{
+	transform: rotate(45deg);
+}
+.nav-toggler span::after{
+	transform: translateY(6px);
+}
+.nav-toggler.active span::after{
+	transform: rotate(135deg);
+}
+@media(max-width:991px){
+   .nav-toggler{
+   	display: block;
+   }
+   .header .nav{
+   	width: 100%;
+   	padding:0;
+   	max-height: 0px;
+   	overflow: hidden;
+   	visibility: hidden;
+   	transition: all 0.5s ease;
+   }
+   .header .nav.open{
+   	visibility: visible;
+   }
+   .header .nav ul{
+   	padding:12px 15px 0;
+   	margin-top: 12px;
+   	border-top:1px solid rgba(255,255,255,0.2);
+   }
+   .header .nav ul li{
+   	display: block;
+   	margin:0;
+   }
+}
+
+.container-1{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 20px;
+	border-radius: 20px;
+
+}
+.container-1 a img{
+	border-radius: 30px;
+
+
+}
+.container-1 img{
+	height: 200px;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.titulo{
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 25px;
+	text-align: center;
+}
+
+
+
+.informacion{
+	background: url(../img/fondo.png), -webkit-gradient(linear, right top, left top, from(#267bacb2), to(#267bacb2));
+	background: url(../img/fondo.png), linear-gradient(to left, #267bacb2, #dc2430);
+	display: flex;
+	padding: 30px;
+	justify-content: center;
+}
+
+.informacion h4{
+	font-size: 20px;
+	text-align: center;
+	padding: 20px;
+	color: wheat;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.informacion p{
+	font-size: 20px;
+	text-align: center;
+	color: wheat;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*footer*/
+.info{
+    background-color: #1C1F20;
+    padding: 15px 15px;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.info h1{
+	padding: 8px;
+	font-size: 20px;
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+.info a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	padding: 8px;
+	font-size: 15px;
+
+}
+iframe{
+	padding:10px;
+	border-radius: 20px;
+}
+/*fin footer*/
+/*servicios*/
+.Container-1{
+	grid-template-columns: repeat(3, 3fr);
+	display: grid;
+	grid-template-rows: auto;
+	justify-items: center;
+}
+.Container-1 img{
+	height: 150px;
+	border-radius: 20px;
+
+}
+.Servicios-1 a{
+	background-color: burlywood;
+	color: white;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 20px;
+	padding: 5px;
+	
+}
+.Servicios-1 a:hover{
+	background-color: rgba(255, 99, 71, 0.705);
+	color: white;
+	font-size: 20px;
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+@media (max-width: 600px){
+	.Container-1{
+		grid-template-columns: 100%!important;
+		}
+		.Container-1-1-2 {
+			grid-template-columns: 100%!important;
+		}
+		.Container-1-1-3{
+			grid-template-columns: 100%!important;
+
+		}
+}
+
+/*slide*/
+
+
+.slides{
+	width: 100%;
+	position: relative;
+  }
+  
+  .slides .slide{
+	display: none;
+  }
+  
+  .slides .slide img{
+	width: 100%;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  .slides .navigation{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+  }
+  
+  .slides .navigation .prev, .slides .navigation .next{
+	cursor: pointer;
+	padding: 16px;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	background: rgba(0,0,0,0.2);
+	user-select: none;
+	transition: 0.6s ease;
+  }
+  
+  .slides .navigation .prev:hover, .slides .navigation .next:hover{
+	background: rgba(0,0,0,1);
+  }
+  
+  @keyframes fade {
+	from{opacity: 0.3}
+	to {opacity: 1}
+  }
+  
+  @media (max-width: 992px){
+	.slides .navigation .prev, .slides .navigation .next{
+	  font-size: 18px;
+	  padding: 13px;
+	}
+  }
+  
+  @media (max-width: 768px){
+	.slides .navigation .prev, .slides .navigation .next{
+	  font-size: 15px;
+	  padding: 10px;
+	}
+  }
+  
+  @media (max-width: 576px){
+	.slides .navigation .prev, .slides .navigation .next{
+	  font-size: 12px;
+	  padding: 7px;
+	}
+  }
+  
+  @media (max-width: 360px){
+	.slides .navigation .prev, .slides .navigation .next{
+	  font-size: 11px;
+	  padding: 6px;
+	}
+  }
+
+/*FIN*/
+/*Servicios-Titulo-color
+*/
+
+.Servicios-Titulo{
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	
+}
+.Servicios-Titulo-color{
+	color: #797979;
+	padding: 20px;
+}
+/*FIN*/
+/*Container-1*/
+.Container-1-5{
+	background-color: #726f6f00;
+	padding: 30px;
+	text-align: center;
+
+}
+.Container-1-1-2{
+	display: grid;
+	grid-template-columns: repeat(2,2fr);
+	grid-template-rows: auto;
+	align-items: center;
+	padding: 20px;
+	gap: 40px;
+}
+/*FIN*/
+/*Container-1*/
+.Container-1-6{
+	background-color: #726f6f00;
+	padding: 30px;
+	text-align: center;
+
+}
+.Container-1-1-3{
+	display: grid;
+	grid-template-columns: repeat(2,2fr);
+	grid-template-rows: auto;
+	align-items: center;
+	padding: 20px;
+	gap: 40px;
+}
+.informacion-1 img{
+	text-align: center;
+	border-radius: 200%;
+}
+/*FIN*/

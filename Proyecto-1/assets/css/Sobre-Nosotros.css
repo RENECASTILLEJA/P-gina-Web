@@ -1,0 +1,493 @@
+:root{
+    --color-1: white;
+	
+
+}
+body{
+	background-color: #f0f0f041;
+	font-family: 'Montserrat', sans-serif!important;
+
+	
+}
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.align-items-center{
+	align-items: center;
+}
+.justify-content-between{
+	justify-content: space-between;
+}
+/*header*/
+.header{
+	background-color: var(--color-1);
+	padding: 12px 0;
+	line-height: 1.5;
+}
+
+.header .logo,
+.header .nav{
+	padding:0 15px;
+}
+.header .logo a{
+	font-size: 15px;
+	color: black;
+	text-transform: capitalize;
+}
+.header .nav ul li{
+	display: inline-block;
+	margin-left: 40px;
+}
+.header .nav ul li a{
+	display: block;
+	font-size: 18px;
+	text-transform: capitalize;
+	color: black;
+	padding: 10px 0;
+	transition: all 0.5s ease;
+}
+
+.header .nav .color:hover{
+	border-radius: 10px;
+	text-decoration: overline;
+	color: #dc2430;
+}
+.nav-toggler{
+	height: 34px;
+	width: 44px;
+	background-color: grey;
+	border-radius: 4px;
+	cursor: pointer;
+	border:none;
+	display: none;
+	margin-right: 15px;
+}
+.nav-toggler:focus{
+	outline: none;
+	box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+.nav-toggler span{
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    display: block;
+    margin:auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.nav-toggler.active span{
+	background-color: transparent;
+}
+.nav-toggler span::before,
+.nav-toggler span::after{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-1);
+	transition: all 0.3s ease;
+}
+.nav-toggler span::before{
+	transform: translateY(-6px);
+}
+.nav-toggler.active span::before{
+	transform: rotate(45deg);
+}
+.nav-toggler span::after{
+	transform: translateY(6px);
+}
+.nav-toggler.active span::after{
+	transform: rotate(135deg);
+}
+@media(max-width:991px){
+   .nav-toggler{
+   	display: block;
+   }
+   .header .nav{
+   	width: 100%;
+   	padding:0;
+   	max-height: 0px;
+   	overflow: hidden;
+   	visibility: hidden;
+   	transition: all 0.5s ease;
+   }
+   .header .nav.open{
+   	visibility: visible;
+   }
+   .header .nav ul{
+   	padding:12px 15px 0;
+   	margin-top: 12px;
+   	border-top:1px solid rgba(255,255,255,0.2);
+   }
+   .header .nav ul li{
+   	display: block;
+   	margin:0;
+   }
+}
+
+.container-1{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 20px;
+	border-radius: 20px;
+
+}
+.container-1 a img{
+	border-radius: 30px;
+
+
+}
+.container-1 img{
+	height: 200px;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.titulo{
+	font-size: 20px;
+	padding: 25px;
+	text-align: center;
+}
+
+
+
+.informacion{
+	background: url(../img/fondo.png), -webkit-gradient(linear, right top, left top, from(#267bacb2), to(#267bacb2));
+	background: url(../img/fondo.png), linear-gradient(to left, #267bacb2, #dc2430);
+	display: flex;
+	padding: 30px;
+	justify-content: center;
+}
+
+.informacion h4{
+	font-size: 20px;
+	text-align: center;
+	padding: 20px;
+	color: wheat;
+}
+.informacion p{
+	font-size: 20px;
+	text-align: center;
+	color: wheat;
+}
+
+/*footer*/
+.info{
+    background-color: #363333;
+    padding: 15px 15px;
+	grid-template-columns: repeat(4,4fr);
+	display: grid;
+	
+}
+.info h1{
+	padding: 8px;
+	font-size: 20px;
+	color: rgb(255, 249, 249);
+	display: flex;
+	justify-content: center;
+}
+.info a{
+	padding: 10px;
+	color: rgb(255, 255, 255);
+	padding: 8px;
+	font-size: 15px;
+
+}
+.info p{
+	padding: 10px;
+	color: rgb(255, 255, 255);
+	padding: 8px;
+	font-size: 15px;
+	text-align: center;
+
+}
+.info img{
+	height: 30px;
+	padding-left: 10px;
+
+}
+iframe{
+	padding:10px;
+	border-radius: 20px;
+}
+@media (max-width:480px){
+    .info{
+        grid-template-columns: 100%!important;
+    }
+	#imagen h2{
+		color: white;
+		font-size: 26px!important;
+	
+	}
+	#imagen p{
+		color: white;
+		font-size: 26px!important;
+	
+	}
+}
+/*fin footer*/
+
+/*grid*/
+
+.color-1-1{
+    background-color: rgb(37, 151, 104);
+    padding: 16px;
+}
+.color-1-1 h1{
+    color: white;
+    padding: 13pxx;
+    font-size: 20px;
+}
+
+#imagen{
+	background:rgba(31, 17, 80, 0.308) url(../Imagenes-Contabilidad/como-escribir-web-sobre-nosotros.jpg);
+	background-blend-mode: darken;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px;
+	background-position: center center;
+	opacity: 0.7;
+	display: flex;
+	
+}
+#imagen h2{
+	color: white;
+	font-size: 37px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+#imagen p{
+	color:white;
+	font-size: 37px;
+}
+
+.como-hacemos{
+	grid-template-columns: repeat(2,2fr);
+	display: grid;
+	grid-template-rows: auto;
+	padding: 20px;
+}
+.como-hacemos-1 img{
+	height: 400px;
+	opacity: 0.8;
+	border-radius: 10px;
+}
+.como-hacemos-1 h1{
+	padding-left: 30px;
+	color: #304269;
+	font-size: 41px;
+
+}
+
+.como-hacemos-1 p{
+	text-align: left;
+	padding-left: 20px;
+	color: #304269;
+	font-size: 17px;
+
+}
+
+@media (max-width:480px){
+	.como-hacemos{
+			grid-template-columns: 100%!important;
+	}
+	.como-hacemos img{
+		padding: 10px;
+		border-radius: 10px;
+		height: 217px;
+	
+	}
+}
+
+.Informacion-cards p{
+	padding: 8px;
+	color: black;
+	font-size: 17px;
+	color:white;
+	text-align: center;
+
+}
+.Informacion-cards h6{
+	color: white;
+	font-size: 26px;
+	text-align: center;
+
+
+}
+.Informacion-cards{
+	display: grid;
+	grid-template-columns: repeat(3,3fr);
+	padding: 20px;
+	/*background-color: #2a86bb;
+	position: absolute;
+	top: 350px;*/
+	
+	
+}
+@media (max-width:490px){
+	.Informacion-cards{
+		grid-template-columns: 100%!important;
+	}
+}
+.Informacion-cards-1-1-0{
+	background-color: #2a86bb;
+	gap: 20px;
+	border-radius: 2px;
+
+}
+.Informacion-cards-1-1-2{
+	background-color: #3797ce;
+	gap:20px;
+
+}
+.Informacion-cards-1-1-3{
+	background-color: #1576ad;
+	gap:20px;
+	border-radius: 2px;
+
+}
+
+.experiencia{
+	display:grid;
+	grid-template-columns: repeat(2,2fr);
+	grid-template-rows: auto;
+	gap: 20px;
+}
+.experiencia-1 img{
+	height: 400px;
+	gap: 20px;
+	padding: 25px;
+	border-radius: 20px;
+}
+.experiencia-1 p{
+	gap: 20px;
+	padding: 25px;
+	font-size: 17px;
+	color: black;
+}
+
+.experiencia h1{
+	color: #304269;
+	gap: 20px;
+	padding: 25px;
+	font-size: 26px;
+}
+@media (max-width:490px){
+	.experiencia{
+		grid-template-columns: 100%!important;
+	}
+	.experiencia-1 img{
+		padding: 10px;
+		border-radius: 10px;
+		height: 220px;
+	
+	}
+}
+.Nuestro-Servicios-2{
+	display: flex;
+	justify-content: center;
+	background-color: #f0f0f041;
+	padding: 30px;
+}
+.Nuestro-Servicios-1-2 h1{
+	font-size: 26px;
+	color: #304269;
+	text-align: center;
+	padding: 20px;
+}
+
+.Nuestro-Servicios-1-2 p{
+	font-size: 18px;
+	color: black;
+	text-align: center;
+	padding: 25px;
+}
+
+.Nuestro-Servicios-1-3 {
+	display: grid;
+	grid-template-columns: repeat(2,2fr);
+}
+.Nuestro-Servicios-1-4-5 h1{
+	font-size: 26px;
+	color: white;
+	padding-inline-start: 20px;
+	text-align: center;
+	padding: 20px;
+}
+.Nuestro-Servicios-1-4-5 {
+	background: rgba(31, 17, 80, 0.178) url(../Imagenes-Contabilidad/asesoria-fiscal-y-gestoria-contable.jpg);
+	background-blend-mode: darken;
+	background-position: center center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	padding: 60px;
+	gap: 20px;
+	padding-left: 59px;
+}
+.Nuestro-Servicios-1-4 h2{
+	font-size: 26px;
+	color: #304269;
+	padding: 20px;
+}
+.Nuestro-Servicios-1-4 p{
+	font-size: 17px;
+	color: black;
+	padding: 10x;
+	padding-left: 18px;
+}
+
+@media (max-width:490px){
+	.Nuestro-Servicios-1-3{
+		grid-template-columns: 100%!important;
+	}
+	.Nuestro-Servicios-1-4 h2{
+		font-size: 18px;
+	}
+	.Fundacion-1 h1{
+		font-size: 23px!important;
+		
+	}
+}
+.Fundacion{
+	display: flex;
+	justify-content: center;
+	background-color: #304269;
+	padding: 80px;
+
+
+}
+.Fundacion-1 span{
+	color: #dc2430;
+}
+.Fundacion-1 p{
+	color: white;
+	font-size: 18px;
+}
+.Fundacion-1 h1{
+	color: white;
+	font-size: 40px;
+	padding: 15px;
+	text-align: center;
+}

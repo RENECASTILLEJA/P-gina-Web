@@ -1,0 +1,947 @@
+:root{
+    --color-1: #fff;
+}
+body{
+	background-color: #f0f0f041;
+	font-family: 'Montserrat', sans-serif!important;
+
+}
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.align-items-center{
+	align-items: center;
+}
+.justify-content-between{
+	justify-content: space-between;
+}
+/*header*/
+.header{
+	background-color: var(--color-1);
+	padding: 12px 0;
+	line-height: 1.5;
+}
+
+.header .logo,
+.header .nav{
+	padding:0 15px;
+}
+.header .logo a{
+	font-size: 15px;
+	color: black;
+	text-transform: capitalize;
+}
+.header .nav ul li{
+	display: inline-block;
+	margin-left: 40px;
+}
+.header .nav ul li a{
+	display: block;
+	font-size: 17px;
+	text-transform: capitalize;
+	color: black;
+	padding: 10px 0;
+	transition: all 0.5s ease;
+}
+
+.header .nav .color:hover{
+	border-radius: 10px;
+	text-decoration: overline;
+	color: #dc2430;
+}
+.nav-toggler{
+	height: 34px;
+	width: 44px;
+	background-color: grey;
+	border-radius: 4px;
+	cursor: pointer;
+	border:none;
+	display: none;
+	margin-right: 15px;
+}
+.nav-toggler:focus{
+	outline: none;
+	box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+.nav-toggler span{
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    display: block;
+    margin:auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.nav-toggler.active span{
+	background-color: transparent;
+}
+.nav-toggler span::before,
+.nav-toggler span::after{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-1);
+	transition: all 0.3s ease;
+}
+.nav-toggler span::before{
+	transform: translateY(-6px);
+}
+.nav-toggler.active span::before{
+	transform: rotate(45deg);
+}
+.nav-toggler span::after{
+	transform: translateY(6px);
+}
+.nav-toggler.active span::after{
+	transform: rotate(135deg);
+}
+@media(max-width:991px){
+   .nav-toggler{
+   	display: block;
+   }
+   .header .nav{
+   	width: 100%;
+   	padding:0;
+   	max-height: 0px;
+   	overflow: hidden;
+   	visibility: hidden;
+   	transition: all 0.5s ease;
+   }
+   .header .nav.open{
+   	visibility: visible;
+   }
+   .header .nav ul{
+   	padding:12px 15px 0;
+   	margin-top: 12px;
+   	border-top:1px solid rgba(255,255,255,0.2);
+   }
+   .header .nav ul li{
+   	display: block;
+   	margin:0;
+   }
+}
+
+.container-1{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 20px;
+	border-radius: 20px;
+
+}
+.container-1 a img{
+	border-radius: 30px;
+
+
+}
+.container-1 img{
+	height: 200px;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.titulo{
+	font-size: 20px;
+	padding: 25px;
+	text-align: center;
+}
+
+
+
+
+
+.informacion h4{
+	font-size: 20px;
+	text-align: center;
+	padding: 20px;
+	color: wheat;
+}
+.informacion p{
+	font-size: 20px;
+	text-align: center;
+	color: wheat;
+}
+
+/*footer*/
+.info{
+    background-color: #363333;
+    padding: 15px 15px;
+	grid-template-columns: repeat(4,4fr);
+	display: grid;
+	
+}
+.info h1{
+	padding: 8px;
+	font-size: 20px;
+	color: rgb(255, 249, 249);
+	display: flex;
+	justify-content: center;
+}
+.info a{
+	padding: 10px;
+	color: rgb(255, 255, 255);
+	padding: 8px;
+	font-size: 15px;
+
+}
+.info p{
+	padding: 10px;
+	color: rgb(255, 255, 255);
+	padding: 8px;
+	font-size: 15px;
+	text-align: center;
+
+}
+iframe{
+	padding:10px;
+	border-radius: 20px;
+}
+
+.info img{
+	height: 30px;
+	padding-left: 10px;
+
+}
+@media (max-width:480px){
+    .info{
+        grid-template-columns: 100%!important;
+    }
+	#imagen h2{
+		font-size: 18px !important;
+	}
+	#imagen p{
+		font-size: 18px !important;
+	}
+}
+/*fin footer*/
+
+/*Container-1*/
+
+#imagen{
+	background:rgba(31, 17, 80, 0.308) url(../Imagenes-Contabilidad/servicios-contables-1-1.jpg);
+	background-blend-mode: darken;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px;
+	background-position: center center;
+	display: flex;
+	background-attachment: fixed;
+	opacity: 0.7;
+
+
+	
+}
+
+#imagen h2{
+	color: white;
+	font-size: 40px;
+	display: flex;
+	justify-content: left;
+	text-align: left;
+	
+}
+
+#imagen p{
+	color: white;
+	font-size: 27px;
+}
+
+/*Container-1
+#container-1 h1{
+	font-size: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(85, 35, 35);
+	position: absolute;
+	top: 60%;
+	
+}*/
+
+
+/*FIN*/
+
+
+
+.container-informacion-1-1{
+	background-image: url(../../assets/Imagenes-Contabilidad/sobre-ods13.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	padding: 80px;
+	align-items: center;
+	opacity:0.8;
+
+
+}
+.Informacion-1-2 img{
+	height: 450px;
+	border-radius: 30px;
+	width: 450px;
+	padding-left: 40px;
+}
+.Informacion-1-2 p{
+	padding-left: 20px;
+	font-size: 15px;
+	color: white;
+	font-size: 20px;
+	/*font-family: "Montserrat", Sans-serif;*/
+
+}
+.Informacion-1-2 h1{
+	padding-left: 20px;
+	font-size: 30px;
+	color: white;
+	/*font-family: "Montserrat", Sans-serif;*/
+}
+
+/*.Informacion-1-2 a{
+	background-color: #dc2430;
+	padding: 20px;
+	color: #fff;
+	border-radius: 20px;
+	font-size: 20px;
+
+}
+.Informacion-1-2 a:hover{
+	background-color: yellowgreen;
+	color: #fff;
+	border-radius: 20px;
+}*/
+
+
+
+@media (max-width: 395px){
+	.container-informacion-1-1{
+		grid-template-columns: 100% !important;
+	}
+	.Informacion-1-2 img{
+		height: 250px;
+		width: 250px;
+		padding-left: 20px;
+	}
+	.Informacion-1-2 h1{
+		font-size: 35px!important;
+
+	}
+	.Informacion-1-2 p{
+		font-size: 20px!important;
+
+	}
+}
+
+
+
+
+
+.servicios-2-2 a{
+	background-color: #2d3f66;
+	border-radius: 10px ;
+	font-size: 20px;
+	color: white;
+	padding: 15px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	margin-bottom: 20px;
+}
+
+
+  .servicios{
+	  display:grid;
+	  grid-template-columns: repeat(2,2fr);
+	  grid-template-rows: auto;
+  }
+
+  .servicios-1-1{
+	background-image: url(../../assets/Imagenes-Contabilidad/sobre-ods13.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.8;
+	text-align: center;
+	padding-block-start: 200px;
+  }
+
+  .servicios-1-1 h1{
+	color: white;	  
+	font-size: 30px;
+}
+.servicios-1 p{
+	color: rgb(0, 0, 0);
+	padding-left: 32px;
+	font-size: 18px;
+	padding-block-end: 20px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	
+	
+}
+.servicios{
+	background-color: white;
+
+}
+.servicios-1 h1{
+	color: #D9B060;
+	padding-left: 20px;
+	text-align: left;
+	padding: 20px;
+	font-size: 32px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	
+}
+
+@media (max-width: 490px){
+	.servicios{
+		grid-template-columns: 100%!important;
+
+	}
+	.servicios-1-1 h1{
+		font-size: 17px!important;
+	}
+	.servicios-1 p{
+		font-size: 16px!important;
+	}
+	.servicios-1-1{
+		grid-template-columns: 100%!important;
+		height: 200px !important;
+		padding-block-start: 90px;
+	}
+}
+
+.servicios-color-gris{
+	background-color: rgba(141, 137, 137, 0.075);
+	padding: 60px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.servicios-color-gris-1 h1{
+	/*font-family: "Montserrat", Sans-serif;*/
+	color: #304269;
+	font-size: 31px;
+	text-align: center;
+	padding: 5px;
+}
+
+/*.columna-4-contables{
+	display: grid;
+	grid-template-columns: repeat(4,4fr);
+	gap: 20px;
+	padding: 20px;
+	background-color: #f0f0f041;
+
+}
+.columna-4-contables-1 img{
+	height: 190px;
+}
+
+.columna-4-contables-1 p{
+	color:black;	
+	padding: 10px;
+
+
+}
+
+.columna-4-contables-1 li{
+	color:black;
+	font-size: 17;
+	padding: 10px;
+
+}
+.columna-4-contables-1 h1{
+	color: #2d3f66;
+	font-size: 25px;
+	text-align: left;
+	padding: 10px;
+
+}
+
+
+@media (max-width:480px){
+	.columna-4-contables{
+		grid-template-columns: 100%!important;
+
+	}*/
+
+
+.servicios-color-gris-1-2 h1{
+	font-size: 30px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	color: #2d3f66;
+	text-align: center;
+	padding: 5px;
+}
+
+
+.servicios-color-gris-1-1{
+	padding: 20px;
+	justify-content: left;
+	align-items: center;
+	display: flex;
+}
+
+
+.como-hacemos{
+	grid-template-columns: repeat(2,2fr);
+	display: grid;
+	grid-template-rows: auto;
+	padding: 20px;
+	/*background-color: #a3a3a31f;*/
+	background-color: rgba(141, 137, 137, 0.075);
+
+}
+.como-hacemos-1 img{
+	height: 400px;
+	opacity: 0.8;
+	border-radius: 10px;
+}
+.como-hacemos-1 h1{
+	padding-left: 30px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	color: #304269;
+	font-size: 41px;
+
+}
+.como-hacemos-1 a{
+	background-color: rgb(12, 160, 73);
+	/*font-family: "Montserrat", Sans-serif;*/
+	border-radius: 5px;
+	font-size: 17px;
+	color: white;
+	padding: 12px;
+}
+.como-hacemos a{
+	background-color: rgb(12, 160, 73);
+	/*font-family: "Montserrat", Sans-serif;*/
+	border-radius: 5px;
+}
+
+.como-hacemos-1 p{
+	text-align: left;
+	padding-left: 20px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	color: #304269;
+	font-size: 17px;
+
+}
+
+@media (max-width:480px){
+	.como-hacemos{
+			grid-template-columns: 100%!important;
+	}
+	.como-hacemos img{
+		padding: 10px;
+		border-radius: 10px;
+		height: 217px;
+	
+	}
+
+}
+
+.Nuestro-Servicios-0{
+	display: flex;
+	justify-content: center;
+	background-color: white;
+}
+.Nuestro-Servicios-01 h1{
+	/*font-family: "Montserrat", Sans-serif;*/
+	font-size: 35px;
+	color: black !important;
+	text-align: center;
+	padding: 20px;
+}
+
+.Nuestro-Servicios-01 p{
+	/*font-family: "Montserrat", Sans-serif;*/
+	font-size: 30px;
+	color: black !important;
+	text-align: center;
+	padding: 20px;
+}
+
+
+
+.Nuestro-Servicios{
+	display: flex;
+	justify-content: center;
+}
+.Nuestro-Servicios-1 h1{
+	/*font-family: "Montserrat", Sans-serif;*/
+	font-size: 35px;
+	color: #304269;
+	text-align: center;
+	padding: 20px;
+}
+
+/*.Nuestro-Servicios-1 p{
+	font-family: "Montserrat", Sans-serif;
+	font-size: 30px;
+	color: #363333;
+	text-align: center;
+	padding: 20px;
+}*/
+.imagen-servicios{
+	background:rgba(31, 17, 80, 0.308) url(../Imagenes-Contabilidad/innovacion-tecnologica.jpg);
+	background-blend-mode: darken;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	height: 400px;
+	display: flex;
+	justify-content: center;	
+}
+
+.imagen-servicio-1 h1{
+	color: white;
+	font-size: 40px;
+	padding-left: 20px;
+	padding: 30px;
+	text-align: center;
+}
+.imagen-servicio-1 h2{
+	color: rgb(179, 48, 48);
+	font-size: 30px;
+	padding-left: 30px;
+	padding: 30px;
+	text-align: center;
+}
+.imagen-servicio-1 a{
+	color: black;
+	background-color: #00a5df;
+	border-radius: 5px;
+	padding: 13px;
+	font-size: 19px;
+}
+.imagen-servicio-1 p{
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	padding-left: 40px;
+
+}
+@media (max-width: 490px){
+	.imagen-servicio-1 h1{
+		color: white;
+		font-size: 15px;
+		padding-left: 20px;
+		padding: 30px;
+		text-align: center;
+	}
+	.imagen-servicio-1 h2{
+		color: rgb(179, 48, 48);
+		font-size: 15px;
+		padding-left: 30px;
+		padding: 30px;
+		text-align: center;
+	}
+	.imagen-servicio-1 a{
+		color: black;
+		background-color: #00a5df;
+		border-radius: 5px;
+		padding: 13px;
+		font-size: 17px;
+	}
+	.imagen-servicio-1 p{
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		padding-left: 40px;
+	
+	}
+	.Nuestro-Servicios-1 h1{
+		font-size: 28px!important;
+	}
+}
+.Nuestro-Servicios-2{
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	padding: 30px;
+}
+.Nuestro-Servicios-1-2 h1{
+	font-size: 26px;
+	color: #304269;
+	text-align: center;
+	padding: 20px;
+}
+
+.Nuestro-Servicios-1-2 p{
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	padding: 20px;
+}
+.servicios-one{
+	background-color: white;
+	display: grid;
+	grid-template-columns: repeat(3, 3fr);
+}
+.servicios-dos img{
+	height: 220px;
+	gap: 20px;
+	padding: 10px;
+}
+.servicios-dos h1{
+	color: 	 #304269;
+	font-size: 18px;
+	padding-left: 10px;
+	padding: 10px;
+}
+.servicios-dos p{
+	color: rgb(0, 0, 0);
+	/*font-family: "Montserrat", Sans-serif;*/
+	font-size: 18px;
+	padding: 10px;
+	padding-left: 10px;
+}
+
+.Servicios-promo{
+	display: grid;
+	grid-template-columns: repeat(3,3fr);
+	
+
+}
+.Servicios-promo-1 img{
+	height: 100px;
+	padding: 20px;
+	gap: 20px;
+}
+
+.Servicios-promo-1 h1{
+	padding-left: 20px;
+	color: #304269
+	!important;
+	font-size: 18px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	text-align: center;
+	
+
+}
+
+.Servicios-promo-1 p{
+	padding-left: 20px;
+	color: black !important;
+	font-size: 18px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	text-align: left;
+	padding-top: 20px;
+
+}
+
+.Servicios-promo-1-1{
+	display: grid;
+	grid-template-columns: repeat(3,3fr);
+	background-color: white;
+
+}
+
+.Servicios-promo-1-2 img{
+	height: 100px;
+	padding: 20px;
+	gap: 20px;
+}
+
+
+.Servicios-promo-1-2 h1{
+	padding-left: 20px;
+	color: #304269
+	!important;
+	font-size: 18px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	text-align: center;
+	
+}
+
+.Servicios-promo-1-2 p{
+	padding-left: 20px;
+	color: black !important;
+	font-size: 17px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	text-align: left;
+	
+}
+@media (max-width: 500px){
+		.Servicios-promo-1-1
+	{
+		grid-template-columns: 100%!important;
+	}
+	.Servicios-promo{
+		grid-template-columns: 100%!important;
+
+	}
+	.servicios-one{
+		grid-template-columns: 100%!important;
+
+	}
+	.imagen-servicio-1 h1{
+		font-size: 30px;
+	}
+	.servicios-dos img{
+		height: 200px;
+	}
+	.Nuestro-Servicios-1-2 h1{
+		font-size: 18px;
+	}
+	.Nuestro-Servicios-1-2 p{
+		font-size: 18px;
+	}
+	.servicios-dos h1{
+		font-size: 18px!important;
+	}
+	.servicios-dos p{
+		font-size: 18px!important;
+	}
+}
+
+.Conocenos{
+	grid-template-columns: repeat(2,2fr);
+	display: grid;
+	grid-template-rows:auto ;
+
+}
+.Conocenos-1 {
+	/*background: linear-gradient(to right, #fdd853 0%, #ffc800 100%);*/
+	background-color: #2d3f66;
+}
+.Conocenos-1 img{
+	height: 520px;
+}
+.Conocenos-1 h1{
+	color: white;
+	padding-left: 50px;
+	padding: 20px;
+	font-size: 28px;
+}
+
+.Conocenos-1 li{
+	color: white;
+	font-size: 18px;
+	padding-left: 50px;
+}
+
+
+
+
+.Conocenos-2{
+	display: flex;
+	justify-content: center;
+	background:rgba(31, 17, 80, 0.308) url(../Imagenes-Contabilidad/innovacion-tecnologica.jpg);
+	background-blend-mode: darken;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 400px;
+	background-attachment: fixed;
+	padding: 80px;
+}
+
+.Conocenos-1-2 h1{
+	color: white;
+	font-size: 59px;
+	text-align: center;
+	background-color: #2d3f6671;
+
+}
+
+.Conocenos-1-2 p{
+	color: white;
+	font-size: 36px;
+	text-align: center;
+	background-color: #2d3f6671;
+}
+@media (max-width: 490px){
+	.Conocenos{
+		grid-template-columns: 100%!important;
+	}
+	.Conocenos-1 img{
+		height: 240px;
+	}
+	.Conocenos-1-2 h1{
+		font-size: 20px;
+	}
+	.Conocenos-1-2 p{
+		font-size: 19px;
+	}
+	.contenedor-2{
+		grid-template-columns: 100%!important;
+
+	}
+	.Conocenos-1 h1{
+		font-size: 20px!important;
+	}
+	.one-text h1{
+		font-size: 17px !important;
+	
+	}
+}
+
+
+.linea{
+	height: 3px;
+	background: #304269;
+	max-width: 4000px;
+	margin: 40px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.contenedor-2{
+	display: grid;
+	grid-template-columns: repeat(2,2fr);
+	padding: 40px;
+}
+.contenedor-3 img{
+	height: 100px;
+}
+
+.contenedor-3 p{
+	font-size: 18px;
+	/*font-family: "Montserrat", Sans-serif;*/
+	color: black;
+	padding-left: 60px;
+}
+
+
+.linea-1{
+	height: 3px;
+	background: #304269;
+	max-width: 4000px;
+	margin: 40px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.one-text {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	
+	/*font-family: "Montserrat", Sans-serif;*/
+
+}
+.one-text h1{
+	color: rgb(233, 131, 35);
+	font-size: 25px;
+	/*font-family: "Montserrat", Sans-serif;*/
+
+}
